@@ -24,6 +24,12 @@ $ turbo devserver
 ## Documentation
 Image transform takes an image url and returns three formatted versions: original, cropped and thumbnail. The formatted results can also be extended to more additional versions by appending a suffix at the end of the original url for greater scaling and cropping options.
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 ### Example
 
 #### Step 1
@@ -36,5 +42,8 @@ Enter the image url into the follwing endpoint as the 'url' query parameter (mak
 https://api.turbo360.co/vectors/image-transform-vn0vgw/transform?format=json&url=http://img.usmagazine.com/480-width/tom-brady-zoom-e80aba06-7468-4352-9280-ae37b2d73eba.jpg
 ```
 
-This will return a JSON payload with example image urls for the original size, scaled and a thumbnail 
+This returns a JSON payload with example image urls for the original size, scaled and a thumbnail. To see the image rendered as html, remove the 'format' parameter from the endpoint:
 
+```
+https://api.turbo360.co/vectors/image-transform-vn0vgw/transform?url=http://img.usmagazine.com/480-width/tom-brady-zoom-e80aba06-7468-4352-9280-ae37b2d73eba.jpg
+```
