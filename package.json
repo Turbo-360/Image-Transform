@@ -10,6 +10,11 @@
   },
   "dependencies": {
     "bluebird": "^3.5.0",
+    "image-min": "^0.3.2",
+    "imagemin": "^5.3.1",
+    "imagemin-jpegoptim": "^5.1.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.1",
     "superagent": "^3.6.0",
     "turbo360": "latest",
     "url-to-image": "^1.0.0"
@@ -30,7 +35,10 @@
     "turbo360": "latest",
     "url-to-image": "^1.0.0",
     "superagent": "^3.6.0",
-    "bluebird": "^3.5.0"
+    "bluebird": "^3.5.0",
+    "imagemin": "^5.3.1",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-jpegoptim": "^5.1.0"
   },
   "deploy": [
     "index.html",
