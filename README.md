@@ -24,9 +24,9 @@ $ turbo devserver
 ## Documentation
 Image transform takes an image url and returns three formatted versions: original, cropped and thumbnail. The formatted results can also be extended to more additional versions by appending a suffix at the end of the original url for greater scaling and cropping options.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| Endpoint        | Are           | Cool  |
+| ------------- | ------------- | ----- |
+| https://api.turbo360.co/vectors/image-transform-vn0vgw/transform      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
