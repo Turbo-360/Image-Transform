@@ -1,0 +1,40 @@
+{
+  "name": "image-transform",
+  "version": "0.0.0",
+  "server": false,
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && gulp prod",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "superagent": "^3.6.0",
+    "turbo360": "latest",
+    "url-to-image": "^1.0.0"
+  },
+  "devDependencies": {
+    "express": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat": "latest",
+    "gulp-less": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-rename": "latest",
+    "gulp-uglify": "latest",
+    "nodemon": "latest"
+  },
+  "functions": {
+    "turbo360": "latest",
+    "url-to-image": "^1.0.0",
+    "superagent": "^3.6.0",
+    "bluebird": "^3.5.0"
+  },
+  "deploy": [
+    "index.html",
+    "dist"
+  ],
+  "app": "59cb5eed7cfffd0012965605"
+}
