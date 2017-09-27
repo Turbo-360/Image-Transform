@@ -22,13 +22,16 @@ $ turbo devserver
 ```
 
 ## Documentation
-Image transform takes an image url and returns three formatted versions: original, cropped and thumbnail. The formatted results can also be extended to more additional versions by appending a suffix at the end of the original url for greater scaling and cropping options.
+Image transform takes an image url and returns three formatted versions: original, cropped and thumbnail. The formatted results can also be extended to more additional versions by appending a suffix at the end of the original url for greater scaling and cropping options. The base endpoint is:
 
-| Endpoint        | Are           | Cool  |
+```
+https://api.turbo360.co/vectors/image-transform-vn0vgw/transform
+```
+
+| Query        | Required           | Options  |
 | ------------- | ------------- | ----- |
-| https://api.turbo360.co/vectors/image-transform-vn0vgw/transform      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| url      | yes | $1600 | 'https://www.path-to-image.jpeg'
+| format      | no | $1600 | 'json' or 'html'
 
 ### Example
 
