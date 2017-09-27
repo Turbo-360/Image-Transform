@@ -24,12 +24,12 @@ $ turbo devserver
 ## Documentation
 Image transform takes an image url and returns three formatted versions: original, cropped and thumbnail. The formatted results can also be extended to more additional versions by appending a suffix at the end of the original url for greater scaling and cropping options.
 
-## Example
+### Example
 
-## Step 1
+#### Step 1
 Find an image online or use this as an example: http://img.usmagazine.com/480-width/tom-brady-zoom-e80aba06-7468-4352-9280-ae37b2d73eba.jpg
 
-## Step 2
+#### Step 2
 Enter the image url into the follwing endpoint as the 'url' query parameter (make sure there are no query parameters in the image url itself):
 
 ```

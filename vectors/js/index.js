@@ -91,7 +91,7 @@ module.exports = {
 
 				if (format == 'html'){
 					let html = '<html><h2>Original</h2><img src="'+address+'" />'
-					html += '<h3>Cropped</h3><img src="'+address+'=s160" />'
+					html += '<h3>Scaled</h3><img src="'+address+'=s160" />'
 					html += '<h4>Thumbnail</h4><img src="'+address+'=s64-c" />'
 					res.send(html)
 					return
@@ -101,7 +101,7 @@ module.exports = {
 					confirmation: 'success',
 					formatted: {
 						original: address,
-						cropped: address+'=s160',
+						scaled: address+'=s160',
 						thumbnail: address+'=s64-c'
 					}
 				})
