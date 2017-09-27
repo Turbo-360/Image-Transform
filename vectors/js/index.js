@@ -115,15 +115,6 @@ module.exports = {
 				data: err.message
 			})
 		})
-	},
-
-	sample: (req, res) => {
-		var queryParams = req.query
-		res.status(200).json({
-			confirmation: 'success',
-			data: 'This is sample one!',
-			params: queryParams
-		})
 	}
 
 }
