@@ -22,7 +22,7 @@ $ turbo devserver
 ```
 
 ## Documentation
-Image transform takes an image url and returns three formatted versions: original, cropped and thumbnail. The formatted results can also be extended to more additional versions by appending a suffix at the end of the original url for greater scaling and cropping options. The base endpoint is:
+Image transform takes an image url and returns three formatted versions: original, scaled and thumbnail. The formatted results can also be extended to more additional versions by appending a suffix at the end of the original url for greater scaling and cropping options. The base endpoint is:
 
 ```
 https://api.turbo360.co/vectors/image-transform-vn0vgw/transform
@@ -50,3 +50,7 @@ This returns a JSON payload with example image urls for the original size, scale
 ```
 https://api.turbo360.co/vectors/image-transform-vn0vgw/transform?url=http://img.usmagazine.com/480-width/tom-brady-zoom-e80aba06-7468-4352-9280-ae37b2d73eba.jpg
 ```
+
+### Recommended Use
+After uploading your image to a standard static storage provider such as S3, query the Image Transform endpoint with your image url and use the results for dynamic rendering in your website, mobile app, etc.
+
