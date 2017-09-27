@@ -30,8 +30,8 @@ https://api.turbo360.co/vectors/image-transform-vn0vgw/transform
 
 | Query        | Required           | Options  |
 | ------------- | ------------- | ----- |
-| url      | yes | $1600 | 'https://www.path-to-image.jpeg'
-| format      | no | $1600 | 'json' or 'html'
+| url      | yes  | 'https://www.path-to-image.jpeg'
+| format      | no | 'json' or 'html'
 
 ### Example
 
