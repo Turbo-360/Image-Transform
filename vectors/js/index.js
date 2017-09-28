@@ -18,9 +18,6 @@ var imagemin = require('imagemin')
 var imageminJpegoptim = require('imagemin-jpegoptim')
 var imageminPngquant = require('imagemin-pngquant')
 
-// var path = require('path')
-// var sha1 = require('sha1')
-
 var httpRequest = function(url, query){
 	return new Promise(function(resolve, reject){
 		superagent.get(url)
@@ -40,6 +37,7 @@ var httpRequest = function(url, query){
 
 module.exports = {
 
+	/*
 	compress: (req, res) => {
 		const url = req.query.url
 		if (url == null){
@@ -68,57 +66,14 @@ module.exports = {
 			res.send(data)
 			// return httpRequest('https://media-service.appspot.com/api/upload')
 		})
-		// .then(payload => {
-		// 	const json = JSON.parse(payload)
-		// 	const upload = json.upload
-
-		// 	var uploadRequest = superagent.post(upload)
-		// 	uploadRequest.attach('file', fileData, 'test.jpg')
-
-		// 	var uploadRequest = superagent.post(upload)
-		// 	uploadRequest.attach('file', fileData, 'test.jpg')
-
-		// 	uploadRequest.end((err, resp) => {
-		// 		if (err){
-		// 			console.log('UPLOAD ERROR: ' + JSON.stringify(err))
-		// 			res.json({
-		// 				confirmation: 'fail',
-		// 				message: err
-		// 			})
-		// 			return
-		// 		}
-
-		// 		const image = resp.body.image
-		// 		const address = image.address
-
-		// 		if (format == 'html'){
-		// 			let html = '<html><h2>Original</h2><img src="'+address+'" />'
-		// 			html += '<h3>Scaled</h3><img src="'+address+'=s160" />'
-		// 			html += '<h4>Thumbnail</h4><img src="'+address+'=s64-c" />'
-		// 			res.send(html)
-		// 			return
-		// 		}
-
-		// 		res.json({
-		// 			confirmation: 'success',
-		// 			formatted: {
-		// 				original: address,
-		// 				scaled: address + '=s160',
-		// 				thumbnail: address + '=s64-c'
-		// 			}
-		// 		})
-	 //        })
-
-	 //        return
-		// })
 		.catch(err => {
 			res.json({
 				confirmation: 'fail',
 				data: err.message
 			})
 		})
-
 	},
+	*/
 
 	transform: (req, res) => {
 		// var url = 'https://news.ycombinator.com/'
